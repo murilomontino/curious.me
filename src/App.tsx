@@ -1,9 +1,9 @@
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { DefaultTheme, ThemeProvider } from 'styled-components';
-import { Route, BrowserRouter, Switch } from 'react-router-dom';
-import { AuthContextProvider } from './contexts/AuthContext';
-import usePersistedState from './utils/hooks/usePersistedState';
-import { AdminRoom, Home, NewRoom, Room, NotFound } from './pages';
 import { Header } from './components';
+import { AuthContextProvider } from './contexts/AuthContext';
+import { AdminRoom, Home, NewRoom, NotFound, Room } from './pages';
+import usePersistedState from './utils/hooks/usePersistedState';
 
 import GlobalStyle from './styles/global';
 import { dark, light } from './styles/themes';
